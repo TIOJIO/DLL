@@ -1,5 +1,5 @@
-create table pressing(
-     id_presing  int(2),
-     nom_pressing varchar(20),
-     localisation varchar(20)
+CREATE TABLE `pressing` (
+  `id_pressing` int(10) NOT NULL,
+  `nom_pressing` varchar(255) NOT NULL,
+  `localisation` varchar(255) NOT NULL
 )
