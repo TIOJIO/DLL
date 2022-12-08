@@ -1,4 +1,4 @@
-CREATE TABLE `adresse` (
-  `id_adresse` int(10) NOT NULL,
-  `nom_adresse` varchar(255) NOT NULL
+CREATE TABLE `ADRESSE` (
+  `ID_ADRESSE` INT(10) NOT NULL,
+  `NOM_ADRESSE` VARCHAR(255) NOT NULL
 );

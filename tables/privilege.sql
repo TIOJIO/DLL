@@ -1,6 +1,6 @@
-CREATE TABLE `privilege` (
-  `id_privilege` int(10) NOT NULL,
-  `nom_privilege` varchar(255) NOT NULL,
-  `id_utilisateur` int(10) NOT NULL,
-  `id_pressing` int(10) NOT NULL
+CREATE TABLE `PRIVILEGE` (
+  `ID_PRIVILEGE` INT(10) NOT NULL,
+  `NOM_PRIVILEGE` VARCHAR(255) NOT NULL,
+  `ID_UTILISATEUR` INT(10) NOT NULL,
+  `ID_PRESSING` INT(10) NOT NULL
 );

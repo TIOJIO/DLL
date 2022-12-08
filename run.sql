@@ -1,63 +1,92 @@
 --creation de l'utilisateur
- CFREATE USER csi3
-     IDENTIFIED BY csi3  ACCOUNT UNLOCK;
+CFREATE USER CSI3
 
-GRANT connect , resource  TO csi3;
-GRANT ALL PRIVILEGES TO csi3;
+IDENTIFIED BY CSI3 ACCOUNT UNLOCK;
 
-CONNECT csi3/csi3;
+GRANT CONNECT, RESOURCE TO CSI3;
 
+GRANT ALL PRIVILEGES TO CSI3;
+
+CONNECT CSI3/CSI3;
 
 --connect sys AS sysdba
 
 --connect SYS/SYS$2022 AS SYSDBA;
 
-SET VERIFY OFF 
-SET LINESIZE 900
-SET PAGESIZE 100
+SET VERIFY OFF
 
+SET LINESIZE 900
+
+SET PAGESIZE 100
 
 --chemin run pour creation des table
 
-@./tables/adresse
-@./tables/annonces
-@./tables/attribut
-@./tables/besoin_client
-@./tables/clients
-@./tables/offre
-@./tables/personnes
-@./tables/pressing
-@./tables/privilege
-@./tables/promo
-@./tables/ressources_physiques
-@./tables/roles
-@./tables/services
-@./tables/type_linge
-@./tables/type_service
-@./tables/utilisateur
-@./tables/valeur_attribut
+@./TABLES/ADRESSE
 
+@./TABLES/ANNONCES
+
+@./TABLES/ATTRIBUT
+
+@./TABLES/BESOIN_CLIENT
+
+@./TABLES/CLIENTS
+
+@./TABLES/OFFRE
+
+@./TABLES/PERSONNES
+
+@./TABLES/PRESSING
+
+@./TABLES/PRIVILEGE
+
+@./TABLES/PROMO
+
+@./TABLES/RESSOURCES_PHYSIQUES
+
+@./TABLES/ROLES
+
+@./TABLES/SERVICES
+
+@./TABLES/TYPE_LINGE
+
+@./TABLES/TYPE_SERVICE
+
+@./TABLES/UTILISATEUR
+
+@./TABLES/VALEUR_ATTRIBUT
 
 --chemin run pour creation des contrainte
 
-@./contraint/adresse_contraint
-@./contraint/annonces_contraint
-@./contraint/attribut_contraint
-@./contraint/besoin_client_contraint
-@./contraint/clients_contraint
-@./contraint/offre_contraint
-@./contraint/personnes_contraint
-@./contraint/pressing_contraint
-@./contraint/privilege_contraint
-@./contraint/promo_contraint
-@./contraint/resource_contraint
-@./contraint/roles_contraint
-@./contraint/services_contraint
-@./contraint/type_linge_contraint
-@./contraint/type_service_contraint
-@./contraint/utilisateur_contraint
-@./contraint/valeur_attribut_contraint
+@./CONTRAINT/ADRESSE_CONTRAINT
 
+@./CONTRAINT/ANNONCES_CONTRAINT
 
+@./CONTRAINT/ATTRIBUT_CONTRAINT
 
+@./CONTRAINT/BESOIN_CLIENT_CONTRAINT
 
+@./CONTRAINT/CLIENTS_CONTRAINT
+
+@./CONTRAINT/OFFRE_CONTRAINT
+
+@./CONTRAINT/PERSONNES_CONTRAINT
+
+@./CONTRAINT/PRESSING_CONTRAINT
+
+@./CONTRAINT/PRIVILEGE_CONTRAINT
+
+@./CONTRAINT/PROMO_CONTRAINT
+
+@./CONTRAINT/RESOURCE_CONTRAINT
+
+@./CONTRAINT/ROLES_CONTRAINT
+
+@./CONTRAINT/SERVICES_CONTRAINT
+
+@./CONTRAINT/TYPE_LINGE_CONTRAINT
+
+@./CONTRAINT/TYPE_SERVICE_CONTRAINT
+
+@./CONTRAINT/UTILISATEUR_CONTRAINT
+
+@./CONTRAINT/VALEUR_ATTRIBUT_CONTRAINT

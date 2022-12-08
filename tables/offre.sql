@@ -1,8 +1,8 @@
-CREATE TABLE `offre` (
-  `id_offre` int(10) NOT NULL,
-  `id_service` int(10) NOT NULL,
-  `id_type_linge` int(10) NOT NULL,
-  `description_offre` varchar(255) NOT NULL,
-  `prix` int(10) NOT NULL,
-  `quantite` int(10) NOT NULL
+CREATE TABLE `OFFRE` (
+  `ID_OFFRE` INT(10) NOT NULL,
+  `ID_SERVICE` INT(10) NOT NULL,
+  `ID_TYPE_LINGE` INT(10) NOT NULL,
+  `DESCRIPTION_OFFRE` VARCHAR(255) NOT NULL,
+  `PRIX` INT(10) NOT NULL,
+  `QUANTITE` INT(10) NOT NULL
 );

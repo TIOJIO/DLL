@@ -1,6 +1,6 @@
-CREATE TABLE `services` (
-  `id_service` int(10) NOT NULL,
-  `nom_service` varchar(255) NOT NULL,
-  `description_service` varchar(255) NOT NULL,
-  `id_pressing` int(10) NOT NULL
+CREATE TABLE `SERVICES` (
+  `ID_SERVICE` INT(10) NOT NULL,
+  `NOM_SERVICE` VARCHAR(255) NOT NULL,
+  `DESCRIPTION_SERVICE` VARCHAR(255) NOT NULL,
+  `ID_PRESSING` INT(10) NOT NULL
 );

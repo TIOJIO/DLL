@@ -1,6 +1,6 @@
-CREATE TABLE `roles` (
-  `id_role` int(10) NOT NULL,
-  `id_utilisateur` int(10) NOT NULL,
-  `id_pressing` int(10) NOT NULL,
-  `nom_role` varchar(255) NOT NULL
+CREATE TABLE `ROLES` (
+  `ID_ROLE` INT(10) NOT NULL,
+  `ID_UTILISATEUR` INT(10) NOT NULL,
+  `ID_PRESSING` INT(10) NOT NULL,
+  `NOM_ROLE` VARCHAR(255) NOT NULL
 );

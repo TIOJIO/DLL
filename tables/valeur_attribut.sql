@@ -1,7 +1,7 @@
-CREATE TABLE `valeur_attribut` (
-  `id_service` int(10) NOT NULL,
-  `id_type_linge` int(10) NOT NULL,
-  `id_valeur_attribut` int(10) NOT NULL,
-  `nom_valeur_attribut` varchar(255) NOT NULL,
-  `id_attribut` int(10) NOT NULL,
+CREATE TABLE `VALEUR_ATTRIBUT` (
+  `ID_SERVICE` INT(10) NOT NULL,
+  `ID_TYPE_LINGE` INT(10) NOT NULL,
+  `ID_VALEUR_ATTRIBUT` INT(10) NOT NULL,
+  `NOM_VALEUR_ATTRIBUT` VARCHAR(255) NOT NULL,
+  `ID_ATTRIBUT` INT(10) NOT NULL,
 );

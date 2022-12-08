@@ -1,4 +1,4 @@
-CREATE TABLE `attribut` (
-  `id_attribut` int(10) NOT NULL,
-  `nom_attribut` varchar(255) NOT NULL
+CREATE TABLE `ATTRIBUT` (
+  `ID_ATTRIBUT` INT(10) NOT NULL,
+  `NOM_ATTRIBUT` VARCHAR(255) NOT NULL
 );

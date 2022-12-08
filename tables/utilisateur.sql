@@ -1,7 +1,7 @@
-CREATE TABLE `utilisateur` (
-  `nom_utilisateur` varchar(10) NOT NULL,
-  `prenom_utilisateur` varchar(255) NOT NULL,
-  `adress_utilisateur` varchar(255) NOT NULL,
-  `id_pressing` int(10) NOT NULL,
-  `id_utilisateur` int(10) NOT NULL
+CREATE TABLE `UTILISATEUR` (
+  `NOM_UTILISATEUR` VARCHAR(10) NOT NULL,
+  `PRENOM_UTILISATEUR` VARCHAR(255) NOT NULL,
+  `ADRESS_UTILISATEUR` VARCHAR(255) NOT NULL,
+  `ID_PRESSING` INT(10) NOT NULL,
+  `ID_UTILISATEUR` INT(10) NOT NULL
 );

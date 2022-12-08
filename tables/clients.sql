@@ -1,5 +1,5 @@
-CREATE TABLE `clients` (
-  `id_client` int(10) NOT NULL,
-  `nom_client` varchar(255) NOT NULL,
-  `telephone_client` int(10) NOT NULL
+CREATE TABLE `CLIENTS` (
+  `ID_CLIENT` INT(10) NOT NULL,
+  `NOM_CLIENT` VARCHAR(255) NOT NULL,
+  `TELEPHONE_CLIENT` INT(10) NOT NULL
 );

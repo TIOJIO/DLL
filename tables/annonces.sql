@@ -1,6 +1,6 @@
-CREATE TABLE `annonces` (
-  `id_annonce` int(10) NOT NULL,
-  `description_annonce` varchar(255) NOT NULL,
-  `id_utilisateur` int(10) NOT NULL,
-  `id_pressing` int(10) NOT NULL
+CREATE TABLE `ANNONCES` (
+  `ID_ANNONCE` INT(10) NOT NULL,
+  `DESCRIPTION_ANNONCE` VARCHAR(255) NOT NULL,
+  `ID_UTILISATEUR` INT(10) NOT NULL,
+  `ID_PRESSING` INT(10) NOT NULL
 );

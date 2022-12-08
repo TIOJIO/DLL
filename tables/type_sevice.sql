@@ -1,4 +1,4 @@
-CREATE TABLE `type_service` (
-  `Id_Type_Service` int(10) NOT NULL,
-  `Description_Type_Service` varchar(255) NOT NULL
+CREATE TABLE `TYPE_SERVICE` (
+  `ID_TYPE_SERVICE` INT(10) NOT NULL,
+  `DESCRIPTION_TYPE_SERVICE` VARCHAR(255) NOT NULL
 );

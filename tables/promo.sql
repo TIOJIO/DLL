@@ -1,7 +1,7 @@
-CREATE TABLE `promo` (
-  `id_service` int(10) NOT NULL,
-  `id_type_linge` int(10) NOT NULL,
-  `id_promo` int(10) NOT NULL,
-  `dure_promo` int(10) NOT NULL,
-  `description_promo` varchar(255) NOT NULL
+CREATE TABLE `PROMO` (
+  `ID_SERVICE` INT(10) NOT NULL,
+  `ID_TYPE_LINGE` INT(10) NOT NULL,
+  `ID_PROMO` INT(10) NOT NULL,
+  `DURE_PROMO` INT(10) NOT NULL,
+  `DESCRIPTION_PROMO` VARCHAR(255) NOT NULL
 );
