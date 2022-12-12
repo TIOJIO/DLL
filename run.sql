@@ -1,87 +1,102 @@
+--CONNECT csi3/csi3@LOCALHOST:1521/XEPDB1
 --SET PAGESIZE 100;
 
-SET LINESIZE 500;
+SET linesize 500;
 
-SET VERIFY OFF;
+SET verify off;
 
-SET ECHO OFF;
+SET echo off;
 
-PROMPT ############### CREATION BASE DE L'APPLICATION PRESSINGS ############################';
+prompt ############### creation base de l'APPLICATION PRESSINGS ############################';
 
-ACCEPT MOT_PASSE PROMPT 'ENTREZ LE MOT DE PASSE DE POUR NOUVEL UTILISATEUR CSI3' HIDE;
+/*
+accept mot_passe prompt 'ENTREZ LE MOT DE PASSE DE POUR NOUVEL UTILISATEUR CSI3' hide;
 
 --ALTER SESSION SET "_ORACLE_SCRIPT"=TRUE;
 
-CREATE USER CSI3 IDENTIFIED BY &MOT_PASSE;
+CREATE USER csi3 IDENTIFIED BY &MOT_PASSE;
 
-GRANT ALL PRIVILEGES TO CSI3;
+GRANT ALL PRIVILEGES TO csi3;
 
-CONNECT CSI3/&MOT_PASSE@LOCALHOST:1521/XEPDB1;
+connect csi3/&mot_passe@localhost:1521/xepdb1;
+*/
 
-PROMPT ###################### CRÉATION DES TABLES ###################################################
+prompt ###################### création des tables ###################################################
 
-@./TABLES/ADRESSE
+@./tables/adresse
 
-@./TABLES/ANNONCES
+@./tables/annonces
 
-@./TABLES/BESOIN_CLIENT
+@./tables/besoin_client
 
-@./TABLES/CLIENTS
+@./tables/clients
 
-@./TABLES/OFFRE
+@./tables/offre
 
-@./TABLES/PRESSING
+@./tables/pressing
 
-@./TABLES/PRIVILEGE
+@./tables/privilege
 
-@./TABLES/PROMO
+@./tables/promo
 
-@./TABLES/ROLES
+@./tables/roles
 
-@./TABLES/SERVICES
+@./tables/services
 
-@./TABLES/TYPE_LINGE
+@./tables/type_linge
 
-@./TABLES/TYPE_SERVICE
+@./tables/type_service
 
-@./TABLES/UTILISATEUR
+@./tables/utilisateur
 
-@./TABLES/PRIVILEGE_ROLES
+@./tables/privilege_roles
 
-@./TABLES/PRIVILEGE_UTILISATEUR
+@./tables/privilege_utilisateur
 
-@./TABLES/ROLES_UTILISATEUR
+@./tables/roles_utilisateur
 
-PROMPT ###################### CRÉATION DES CONTRAINTES ###################################################
+@./tables/sessions
 
-@./CONTRAINT/PRESSING_CONTRAINT
+prompt ###################### création des contraintes ###################################################
 
-@./CONTRAINT/ROLES_CONTRAINT
+@./contraint/pressing_contraint
 
-@./CONTRAINT/UTILISATEUR_CONTRAINT
+@./contraint/roles_contraint
 
-@./CONTRAINT/TYPE_SERVICE_CONTRAINT
+@./contraint/utilisateur_contraint
 
-@./CONTRAINT/SERVICES_CONTRAINT
+@./contraint/type_service_contraint
 
-@./CONTRAINT/TYPE_LINGE_CONTRAINT
+@./contraint/services_contraint
 
-@./CONTRAINT/ROLES_UTILISATEUR_CONTRAINT
+@./contraint/type_linge_contraint
 
-@./CONTRAINT/ADRESSE_CONTRAINT
+@./contraint/roles_utilisateur_contraint
 
-@./CONTRAINT/ANNONCES_CONTRAINT
+@./contraint/adresse_contraint
 
-@./CONTRAINT/CLIENTS_CONTRAINT
+@./contraint/annonces_contraint
 
-@./CONTRAINT/BESOIN_CLIENT_CONTRAINT
+@./contraint/clients_contraint
 
-@./CONTRAINT/OFFRE_CONTRAINT
+@./contraint/besoin_client_contraint
 
-@./CONTRAINT/PRIVILEGE_CONTRAINT
+@./contraint/offre_contraint
 
-@./CONTRAINT/PROMO_CONTRAINT
+@./contraint/privilege_contraint
 
-@./CONTRAINT/PRIVILEGE_ROLES_CONTRAINT
+@./contraint/promo_contraint
 
-@./CONTRAINT/PRIVILEGE_UTILISATEUR_CONTRAINT
+@./contraint/privilege_roles_contraint
+
+@./contraint/privilege_utilisateur_contraint
+
+@./contraint/sessions_contraint
+
+prompt ###################### creating sequences ###################################################
+
+@./sequences/utilisateur_sequence
+
+@./sequences/sessions_sequence
+
+@./sequences/pressing_sequence
