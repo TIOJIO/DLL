@@ -1,6 +1,6 @@
-CREATE TABLE ADRESSE (
-  ID_ADRESSE NUMBER(10) NOT NULL,
-  NOM_ADRESSE VARCHAR2(255) NOT NULL
+CREATE TABLE adresse (
+  id_adresse NUMBER(10) NOT NULL,
+  nom_adresse VARCHAR2(255) NOT NULL
 );
 
-COMMENT ON TABLE ADRESSE IS 'Adresses des  clients';
+COMMENT ON TABLE adresse IS 'Adresses des  clients';

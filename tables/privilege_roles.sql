@@ -1,6 +1,6 @@
-CREATE TABLE PRIVILEGE_ROLES(
-    ID_PRIVILEGE NUMBER(10) NOT NULL,
-    ID_ROLE NUMBER (10) NOT NULL
+CREATE TABLE privilege_roles(
+    id_privilege NUMBER(10) NOT NULL,
+    id_role NUMBER (10) NOT NULL
 );
 
-COMMENT ON TABLE PRIVILEGE_ROLES IS 'table association entre la table privilege et la table roles';
+COMMENT ON TABLE privilege_roles IS 'table association entre la table privilege et la table roles';

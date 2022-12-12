@@ -1,7 +1,7 @@
-CREATE TABLE CLIENTS (
-  ID_CLIENT NUMBER(10) NOT NULL,
-  NOM_CLIENT VARCHAR2(255) NOT NULL,
-  TELEPHONE_CLIENT NUMBER(10) NOT NULL
+CREATE TABLE clients (
+  id_client NUMBER(10) NOT NULL,
+  nom_client VARCHAR2(255) NOT NULL,
+  telephone_client NUMBER(10) NOT NULL
 );
 
-COMMENT ON TABLE CLIENTS IS 'Les potentiels clients de agences de pressing.';
+COMMENT ON TABLE clients IS 'Les potentiels clients de agences de pressing.';

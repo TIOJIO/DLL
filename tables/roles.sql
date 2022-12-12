@@ -1,7 +1,7 @@
-CREATE TABLE ROLES (
-  ID_ROLE NUMBER(10) NOT NULL,
-  ID_PRESSING NUMBER(10) NOT NULL,
-  NOM_ROLE VARCHAR2(255) NOT NULL
+CREATE TABLE roles (
+  id_role NUMBER(10) NOT NULL,
+  id_pressing NUMBER(10) NOT NULL,
+  nom_role VARCHAR2(255) NOT NULL
 );
 
-COMMENT ON TABLE ROLES IS 'Le status que peut avoir un adminstrateur de pressing associés a des privilèges.';
+COMMENT ON TABLE roles IS 'Le status que peut avoir un adminstrateur de pressing associés a des privilèges.';

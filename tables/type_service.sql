@@ -1,6 +1,6 @@
-CREATE TABLE TYPE_SERVICE (
-  ID_TYPE_SERVICE NUMBER(10) NOT NULL,
-  DESCRIPTION_TYPE_SERVICE VARCHAR2(255) NOT NULL
+CREATE TABLE type_service (
+  id_type_service NUMBER(10) NOT NULL,
+  description_type_service VARCHAR2(255) NOT NULL
 );
 
-COMMENT ON TABLE TYPE_SERVICE IS 'Les types de service';
+COMMENT ON TABLE type_service IS 'Les types de service';

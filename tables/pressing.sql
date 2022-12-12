@@ -1,7 +1,7 @@
-CREATE TABLE PRESSING (
-  ID_PRESSING NUMBER(10) NOT NULL,
-  NOM_PRESSING VARCHAR2(255) NOT NULL,
-  LOCALISATION VARCHAR2(255) NOT NULL
+CREATE TABLE pressing (
+  id_pressing NUMBER(10) NOT NULL,
+  nom_pressing VARCHAR2(255) NOT NULL,
+  localisation VARCHAR2(255) NOT NULL
 );
 
-COMMENT ON TABLE PRESSING IS 'Table qui contient les informations du pressing créé.';
+COMMENT ON TABLE pressing IS 'Table qui contient les informations du pressing créé.';

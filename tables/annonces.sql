@@ -1,7 +1,7 @@
-CREATE TABLE ANNONCES (
-  ID_ANNONCE NUMBER(10) NOT NULL,
-  DESCRIPTION_ANNONCE VARCHAR2(255) NOT NULL,
-  ID_PRESSING NUMBER(10) NOT NULL
+CREATE TABLE annonces (
+  id_annonce NUMBER(10) NOT NULL,
+  description_annonce VARCHAR2(255) NOT NULL,
+  id_pressing NUMBER(10) NOT NULL
 );
 
-COMMENT ON TABLE ANNONCES IS 'Les annonces du pressing';
+COMMENT ON TABLE annonces IS 'Les annonces du pressing';

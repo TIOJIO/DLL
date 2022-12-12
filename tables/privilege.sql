@@ -1,8 +1,8 @@
-CREATE TABLE PRIVILEGE (
-  ID_PRIVILEGE NUMBER(10) NOT NULL,
-  NOM_PRIVILEGE VARCHAR2(255) NOT NULL,
-  ID_UTILISATEUR NUMBER(10) NOT NULL,
-  ID_ROLE NUMBER(10) NOT NULL
+CREATE TABLE privilege (
+  id_privilege NUMBER(10) NOT NULL,
+  nom_privilege VARCHAR2(255) NOT NULL,
+  id_utilisateur NUMBER(10) NOT NULL,
+  id_role NUMBER(10) NOT NULL
 );
 
-COMMENT ON table PRIVILEGE IS 'table qui contient les privilèges des utilisateurs.';
+COMMENT ON TABLE privilege IS 'table qui contient les privilèges des utilisateurs.';

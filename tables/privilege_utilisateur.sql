@@ -1,6 +1,6 @@
-CREATE TABLE PRIVILEGE_UTILISATEUR(
-    ID_PRIVILEGE NUMBER(10) NOT NULL,
-    ID_UTILISATEUR NUMBER (10) NOT NULL
+CREATE TABLE privilege_utilisateur(
+    id_privilege NUMBER(10) NOT NULL,
+    id_utilisateur NUMBER (10) NOT NULL
 );
 
-COMMENT ON TABLE PRIVILEGE_UTILISATEUR IS 'table association entre la table privilege et la table utilisateur';
+COMMENT ON TABLE privilege_utilisateur IS 'table association entre la table privilege et la table utilisateur';
