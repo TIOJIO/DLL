@@ -4,14 +4,8 @@ SET verify off
 
 SET echo off
 
-SELECT
-    sys_context('userenv',
-    'sessionid') session_id
-FROM
-    dual;
-
 DECLARE
-    v_id_session     NUMBER(20):=223;
+    v_id_session     NUMBER(20);
     v_id_utilisateur sessions.id_utilisateur%type;
 BEGIN
     dbms_output.put_line('---------------------Pressing    PLSQ   APP ----------------------------');
@@ -20,10 +14,6 @@ BEGIN
         'sessionid') session_id INTO v_id_session
     FROM
         dual;
-    dbms_output.put_line('id session '
-        ||v_id_session);
-    dbms_output.put_line('value id session '
-        ||v_id_session);
     SELECT
         id_utilisateur INTO v_id_utilisateur
     FROM

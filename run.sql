@@ -9,7 +9,6 @@ SET echo off;
 
 prompt ############### creation base de l'APPLICATION PRESSINGS ############################';
 
-/*
 accept mot_passe prompt 'ENTREZ LE MOT DE PASSE DE POUR NOUVEL UTILISATEUR CSI3' hide;
 
 --ALTER SESSION SET "_ORACLE_SCRIPT"=TRUE;
@@ -19,7 +18,6 @@ CREATE USER csi3 IDENTIFIED BY &MOT_PASSE;
 GRANT ALL PRIVILEGES TO csi3;
 
 connect csi3/&mot_passe@localhost:1521/xepdb1;
-*/
 
 prompt ###################### création des tables ###################################################
 
@@ -100,3 +98,7 @@ prompt ###################### creating sequences ###############################
 @./sequences/sessions_sequence
 
 @./sequences/pressing_sequence
+
+prompt #######################création des sous programmes #########################################
+
+@sous_programmes

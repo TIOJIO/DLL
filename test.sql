@@ -1,13 +1,23 @@
-/*GRANT ALL PRIVILEGES TO SYSTEM;
+connect csi3/csi3@localhost:1521/xepdb1;
 
---SELECT sys_context('USERENV', 'CURRENT_USER') FROM dual;
+/*SELECT
+    sys_context('USERENV',
+    'CURRENT_USER')
+FROM
+    dual;
+   
+
+GRANT ALL PRIVILEGES TO SYSTEM;
+ */
+/*
 SELECT
     *
 FROM
-    ALL_USERS;
+    all_users;
+    */
 
-ALTER SESSION SET "_ORACLE_SCRIPT"=TRUE;
-*/
+--ALTER SESSION SET "_ORACLE_SCRIPT"=true;
+
 
 --create user csi3 IDENTIFIED by csi3;
 /*SELECT
@@ -16,7 +26,7 @@ FROM
     ALL_USERS;
     */
 
---CONNECT csi3/csi3@LOCALHOST:1521/XEPDB1;
+
 
 --GRANT ALL PRIVILEGES TO CSI3;
 --DEFINE A=&A;
@@ -64,12 +74,12 @@ FROM
 SET verify off
 
 --SET echo off
-
+/*
 SELECT
     *
 FROM
     sessions;
-
+*/
 /*
 DECLARE
     v_id_session     NUMBER(20);
@@ -93,19 +103,24 @@ WHERE
 
 */
 
-/*
+SELECT
+    *
+FROM
+    sessions;
+
 SELECT
     *
 FROM
     utilisateur;
 
 --execute create_session(7);
-
+/*
 SELECT
     sys_context('userenv',
     'sessionid') session_id
 FROM
     dual;
+    
 
 CREATE PRESSING (
     NOM_PRESSING,
@@ -113,7 +128,7 @@ CREATE PRESSING (
 )
 */
 
-INSERT INTO pressing(
+/*INSERT INTO pressing(
     id_pressing,
     nom_pressing,
     localisation
@@ -122,3 +137,9 @@ INSERT INTO pressing(
     'Super clean',
     'Mbouda'
 );
+
+*/
+
+
+
+--select user_name from
